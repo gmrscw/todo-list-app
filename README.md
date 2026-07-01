@@ -1,4 +1,4 @@
-# 📝 To-Do List App
+#  To-Do List App
 
 A simple and responsive To-Do List application built using HTML, CSS, and JavaScript.
 
@@ -23,7 +23,9 @@ todo-list-app/
 │── styles.css
 └── script.js
 ```
+##  Screenshot
 
+![To-Do List App](screenshot.png)
 
 ##  Author
 
