@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>To Do List</title>
+    <title>TaskFlow</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>To Do List</h1>
-        <a href="https://gmrscw.github.io/todo-list-app/" target="_blank">
-  <button>Live Demo</button>
-</a>
+        <h1>TaskFlow</h1>
+
         <div class="input-area">
             <input type="text" id="taskInput" placeholder="Enter task">
+
+            <input type="date" id="dueDate">
+            <select id="priority">
+                <option value="High">🔴 High</option>
+                <option value="Medium">🟡 Medium</option>
+                <option value="Low">🟢 Low</option>
+            </select>
+
+            <select id="category">
+                <option value="Study">Study</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+
             <button onclick="addTask()">Add</button>
         </div>
+
+        <input type="text" id="searchInput" placeholder="Search task...">
+
+        <div class="buttons">
+            <button onclick="showAll()">All</button>
+            <button onclick="showCompleted()">Completed</button>
+            <button onclick="showPending()">Pending</button>
+            <button onclick="clearAll()">Clear All</button>
+            <button id="themeBtn" onclick="toggleDarkMode()">
+                🌙 Dark Mode
+            </button>
+        </div>
+
+        <p id="taskCount"></p>
 
         <ul id="taskList"></ul>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
